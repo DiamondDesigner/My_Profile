@@ -1,9 +1,9 @@
 body {
     min-height: 100vh;
-    background: linear-gradient(#282E58,#10144f);
+    background-color: #10144f;
 }
 
-header {
+nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,35 +14,38 @@ header {
     align-items: center;
 }
 
-header .logo {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 20px;
+nav .logo {
+    border-radius: 50%;
+    width: 30vh;
+    length: 30vh;
+    margin-left: 50px;
+    margin-top: 0%;
 }
 
-header ul {
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li {
+nav ul li {
     list-style: none;
     margin-left: 20px;
 }
 
-header ul li a {
+nav ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 5%;
 }
 
-header ul a:hover, header ul li a.active 
-{
+nav ul li a.active {
     background-color: #fff;
     color: #10144f;
-} 
+}
+
+nav ul a:hover {
+    background-color: rgb(2, 2, 59);
+    border-bottom: 3px solid cyan;
+}
