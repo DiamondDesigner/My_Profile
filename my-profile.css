@@ -1,6 +1,9 @@
+:root {
+    --darkblue: #10144f;
+}
+
 body {
-    min-height: 100vh;
-    background-color: #10144f;
+    min-height: 100vh;  
 }
 
 nav {
@@ -8,44 +11,53 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px, 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav .logo {
+
+    max-width: 40vh;
+    max-height: 40vh;
     border-radius: 50%;
-    width: 30vh;
-    length: 30vh;
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 200px;
     margin-top: 0%;
+
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 25vh;
+    align-self: center;
 }
 
 nav ul li {
     list-style: none;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 nav ul li a {
     text-decoration: none;
+    font-size: large;
     padding: 6px 15px;
-    color: #fff;
+    color: black;
     border-radius: 5%;
+
 }
 
 nav ul li a.active {
-    background-color: #fff;
-    color: #10144f;
+    color: cyan;
+    border-radius: 5%;
+    border-bottom: 5px solid cyan;
 }
 
 nav ul a:hover {
-    background-color: rgb(2, 2, 59);
-    border-bottom: 3px solid cyan;
+    top: 50%;
+    border-bottom: 5px solid cyan;
+    transition: background-color 0.5s ease-in;
+
 }
