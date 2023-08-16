@@ -2,9 +2,11 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    background: rgb(0, 1, 61);
   }
-
+/* variables */
+:root {
+    --backcolor: rgb(0, 1, 61);
+}
   @keyframes rainbow {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
@@ -12,6 +14,9 @@ body, h1, h2, h3, p, ul, li {
   
 body {
     z-index: 2;
+    min-height: 100vh;
+    background: black;
+    
 }
 
 
@@ -153,7 +158,7 @@ header nav ul a.blog:hover {
   .logo {
     border-radius: 50%;
     z-index: 1;
-    margin: 20px;
+    margin: 23px;
     box-shadow: 0 0 15px cyan,
      0 0 30px cyan,
      0 0 30px cyan,
@@ -162,14 +167,18 @@ header nav ul a.blog:hover {
   }
 
   @keyframes rgb {
-    10% {color: red;}
-    50% {color: green;}
-    100% {color: blue;}
+    0%  {color: yellow;}
+    10% {color: lime;}
+    50% {color: cyan;}
+    70% {color: indigo;}
+    80% {color: red;}
+    90% {color: orange;}
+    100% {color: yellow;}
     
   }
 .name2 {
     animation-name: rgb;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -180,4 +189,67 @@ header nav ul a.blog:hover {
     
 }
 
-  
+.circle1 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(blue,cyan);
+    border-radius: 50%;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    box-shadow: 0 0 15px cyan,
+     0 0 30px cyan,
+     0 0 30px cyan,
+     0 0 30px cyan,
+     0 0 30px white;
+
+}
+
+.circle2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(cyan,white);
+    border-radius: 50%;
+    position: absolute;
+    top: 600px;
+    left: 700px;
+    box-shadow: 0 0 15px cyan,
+     0 0 30px cyan,
+     0 0 30px cyan,
+     0 0 30px cyan,
+     0 0 30px white;
+     
+}
+
+.circle3 {
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(cyan,blue);
+    border-radius: 50%;
+    position: absolute;
+    left: -300px;
+    
+}
+
+.glass-box {
+    width: 494px;
+    height: 505px;
+    background: rgba(225,225,225,0.2);
+    z-index: 10;
+    position: relative;
+    left: 70px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid rgba(225,225,225,0.3);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10,0.25);
+    
+}
+.greeting {
+    color: white;
+
+}
+
