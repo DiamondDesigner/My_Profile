@@ -40,19 +40,19 @@ body {
     
 }
 
-header a.name2 {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    margin-left: 50px;
-    z-index: 1;
+.head {
+    width: 100%;
 }
+
 .navbar {
     background-color: black;
     border-bottom: 2px solid blue;
+    display: flex;
+    align-items: center;
     padding: 10px 0;
+    width: 100%;
+    height: 50px;
+    
 }
 
 .navbar ul {
@@ -61,10 +61,11 @@ header a.name2 {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .navbar li {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .navbar li a {
@@ -74,18 +75,34 @@ header a.name2 {
     font-weight: 200;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+    margin-left: 25px;
+}
 
-header nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 12px, 15px;
-    display: inline-block;
-    font-weight: 200;
+.logo {
+    border-radius: 50%;
+    margin-right: 23px;
+    margin-top: 30px;
+    width: 90px;
+    height: 90px;
+    border-bottom: 3px solid blue;
+    margin-left: 0px;
+    box-shadow: 0 0 15px cyan,
+     0 0 10px cyan,
+     0 0 10px cyan,
+     0 0 10px cyan,
+     0 0 10px white;
+    background: none;
+    box-shadow: none;
     
 }
 
-header nav ul a:hover, header nav ul a.active {
+
+
+.navbar li a:hover, .navbar li a.active {
     border-bottom: (3px solid white);
     background-color: black  ;
     border-radius: 5px;
@@ -99,7 +116,7 @@ header nav ul a:hover, header nav ul a.active {
 }
 
 
-header nav ul a.projects:hover {
+.navbar li a.projects:hover {
     border-bottom: (3px solid white);
     background-color: black  ;
     border-radius: 5px;
@@ -110,7 +127,7 @@ header nav ul a.projects:hover {
      0 0 30px goldenrod,
      0 0 30px goldenrod;
 }
-header nav ul a.contact:hover {
+.navbar li a.contact:hover {
     border-bottom: (3px solid white);
     background-color: black  ;
     border-radius: 5px;
@@ -122,7 +139,7 @@ header nav ul a.contact:hover {
      0 0 30px rosybrown;
 }
 
-header nav ul a.blog:hover {
+.navbar li a.blog:hover, .navbar li a.active:hover {
     border-bottom: (3px solid white);
     background-color: black  ;
     border-radius: 5px;
@@ -143,27 +160,6 @@ header nav ul a.blog:hover {
     object-fit: cover;
     z-index: -1;
   }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    border-radius: 50%;
-    margin-right: 23px;
-    width: 70px;
-    height: 70px;
-    margin-left: 30px;
-    box-shadow: 0 0 15px cyan,
-     0 0 10px cyan,
-     0 0 10px cyan,
-     0 0 10px cyan,
-     0 0 10px white;
-    background: none;
-    box-shadow: none;
-    
-}
 
   @keyframes rgb {
     0%  {color: yellow;}
@@ -187,6 +183,5 @@ header nav ul a.blog:hover {
     border-radius: 3px;
     padding: 0px;
     width: 150px;
-    
 }
 
